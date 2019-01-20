@@ -1,0 +1,19 @@
+.footer {
+    background-color: #C7E7A0;
+}
+.header-menu {
+    background-color: #00D4A8;
+    text-align: right;
+    color: white;
+    padding: 20px;
+   
+}
+.header-menu a {
+    color: white;
+    text-decoration: none;
+}
+.header-menu li {
+    display: inline;
+    margin: 10px;
+   
+}
