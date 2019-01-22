@@ -1,6 +1,18 @@
+body {
+    margin: 0px;
+}
 .footer {
     background-color: #C7E7A0;
+   width: 100%;
+ 
 }
+.sidebar {
+   margin-top: 30px;
+
+}
+
+/* header */
+
 .header-menu {
     background-color: #00D4A8;
     text-align: right;
@@ -16,4 +28,43 @@
     display: inline;
     margin: 10px;
    
+}
+/* Home */
+
+.flex-caption {
+    width: 96%;
+    padding: 2%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    font-size: 14px;
+    line-height: 18px;
+  }
+.recetas-blog {
+    border: solid;
+    border-radius: 20px;
+    padding: 25px;
+    border-color: #91678D;
+    float: left;
+}
+.recetas__img {
+   display: block;
+   margin: auto;
+}
+/* single.php */
+
+.carrot-orange {
+color: orange;
+font-size: 20px;
+}
+.recetas__img {
+    width: 300px;
+}
+.receta__content {
+    margin-top: 20px;
+}
+.recetas__main {
+
 }
