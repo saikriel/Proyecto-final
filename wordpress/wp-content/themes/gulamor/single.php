@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <div class="recetas container">
-	<div class="row">
-		<div class="receta__content col-md-8 col-sm-12">
+
+		<div class="receta__content ">
 		<?php if ( have_posts() ) { ?>
 			<?php while ( have_posts() ) { ?>
 				<?php the_post(); ?>
@@ -51,14 +51,12 @@
 			<?php } ?>
 			<?php } else { ?>
 			<!-- Content -->
-			<?php } wp_reset_query(); ?>
-		</div>
+			
+		
 		</div>
 
-		<div class="sidebar col-md-4">
-			<?php get_sidebar() ?>
-		</div>
-	</div>
 </div>
 
 <?php get_footer() ?>
+<?php } wp_reset_post_data();
+				?>

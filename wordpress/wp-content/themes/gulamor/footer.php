@@ -10,8 +10,12 @@
 		<div class="col-md-4">
 		lorem
 		</div>
-		<div class="col-md-4">
-		lorem
+		<div class="col-md-4 ">
+			<p class="footer__titulos"> ¡Visita nuestras redes sociales! </p>	
+			<ul class="footer__listaredes">
+				<li><a href="#"><i class="fab fa-instagram footer__redes"></i></a></li>
+				<li><a href="#"><i class="fab fa-facebook-f footer__redes"></i></a></li>
+			</ul>
 		</div>
 	</div>
 </div>

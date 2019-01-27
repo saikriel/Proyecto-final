@@ -8,7 +8,13 @@
 	<?php wp_head() ?>
 </head>
 <body>
+	<div class="header__main">
+	<h1 class="header__title">
+		gulamor
+			</h1>
+		<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header-menu' ) ); ?>
+		<?php } ?>
 
-<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
-	<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header-menu' ) ); ?>
-<?php } ?>
+	</div>
+	

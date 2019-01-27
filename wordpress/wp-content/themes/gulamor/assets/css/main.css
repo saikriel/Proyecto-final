@@ -1,8 +1,11 @@
 body {
     margin: 0px;
 }
+:root {
+    --main-color: #00D4A8;
+}
 .footer {
-    background-color: #C7E7A0;
+    background-color: var(--main-color)
    width: 100%;
  
 }
@@ -14,14 +17,18 @@ body {
 /* header */
 
 .header-menu {
-    background-color: #00D4A8;
+    
     text-align: right;
-    color: white;
     padding: 20px;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: var(--main-color);
+    border width: 2px;
+ 
    
 }
 .header-menu a {
-    color: white;
+    color: var(--main-color);
     text-decoration: none;
 }
 .header-menu li {
@@ -29,42 +36,131 @@ body {
     margin: 10px;
    
 }
+.header__title {
+    font-family: 'Tangerine', cursive;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+.header__main {
+    padding: 10px;
+}
+
 /* Home */
 
-.flex-caption {
-    width: 96%;
-    padding: 2%;
-    left: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-    color: #fff;
-    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
-    font-size: 14px;
-    line-height: 18px;
-  }
+.home__featured__img {
+    height: 100%;
+  min-width: 100%;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
 .recetas-blog {
-    border: solid;
-    border-radius: 20px;
+    
     padding: 25px;
-    border-color: #91678D;
     float: left;
+    display: inline-block;
+   
 }
 .recetas__img {
    display: block;
    margin: auto;
 }
+
+.search {
+    width: 300px;
+    margin-bottom: 20px;
+}
+.home__contenido{
+    margin-top: 30px;
+}
+
+.home-featured {
+    position: relative;
+    margin-right: 0;
+}
+
+.home-featured__title {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 110, 110);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+.featured__post {
+    width: 250px;
+  height: 500px;
+  overflow:hidden;
+}
+
 /* single.php */
 
+.fa-lemon {
+    font-size: 20px;
+    color: lightgray;
+    margin-left: 5px;
+}
 .carrot-orange {
 color: orange;
 font-size: 20px;
 }
-.recetas__img {
-    width: 300px;
-}
+
+
 .receta__content {
     margin-top: 20px;
 }
-.recetas__main {
 
+/* pag recetas */
+
+.recetas__main {
+    display: inline-block;
+    
+}
+.recetas__img {
+    width: 350;
+    box-shadow: 5px 10px #888888;
+
+}
+.recetas-blog {
+    border-style: solid; 
+    border-color: lightgray;
+    border-width: 1px;
+    margin: 10px;
+    background-color: white;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.recetas__li {
+    list-style: none;
+}
+.recetas__container {
+    background-image: url(../images/bananas.png);
+}
+.recetas__link {
+    text-decoration: none;
+    text-align: center;
+}
+/* Footer */
+.footer__redes {
+    color: white;
+    font-size: 4em;
+    margin: 0 30px 10px 0;
+    text-align: center;
+   
+    
+}
+.footer li {
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+}
+.footer__titulos {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.footer__listaredes {
+    text-align: center;
 }
