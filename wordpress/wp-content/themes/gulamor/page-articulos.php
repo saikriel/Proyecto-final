@@ -16,10 +16,15 @@
 					$get_arg->the_post();
 				
 				?>
-              <div class="articulos__post">
-
-                <?php the_post_thumbnail() ?>
-                <a href="<?php the_permalink() ?>" ><h3><?php the_title() ?></h3></a>
+              <div class="articulos__post container">
+                    <div class=" col-md-4 col-sm-12">
+                    <img src="<?php the_post_thumbnail() ?>" alt="" 
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <a href="<?php the_permalink() ?>" ><h3><?php the_title() ?></h3></a>
+                    </div>
+                
+                
 
               </div>      
 
