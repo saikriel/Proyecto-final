@@ -1,9 +1,10 @@
 <?php 
+// Register Custom Post Type
 function about_me() {
 
 	$labels = array(
-		'name'                  => _x( 'Post Types', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'about me', 'Post Type Singular Name', 'text_domain' ),
+		'name'                  => _x( 'about-me', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'about-me', 'Post Type Singular Name', 'text_domain' ),
 		'menu_name'             => __( 'About me', 'text_domain' ),
 		'name_admin_bar'        => __( 'Post Type', 'text_domain' ),
 		'archives'              => __( 'Item Archives', 'text_domain' ),
@@ -31,7 +32,7 @@ function about_me() {
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'about me', 'text_domain' ),
+		'label'                 => __( 'about-me', 'text_domain' ),
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'custom-fields' ),
@@ -48,7 +49,8 @@ function about_me() {
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
+        'capability_type'       => 'page',
+        'show_in_rest'          => true,
 	);
 	register_post_type( 'about-me', $args );
 

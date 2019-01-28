@@ -5,7 +5,7 @@ body {
     --main-color: #00D4A8;
 }
 .footer {
-    background-color: var(--main-color)
+    background-color: var(--main-color);
    width: 100%;
  
 }
@@ -94,6 +94,19 @@ body {
   height: 500px;
   overflow:hidden;
 }
+.about-me {
+    margin: 30px 0 20px 0;
+    border-style: solid;
+    border-color: var(--main-color);
+    border-width: 1px;
+    padding: 10px;
+}
+.about-me__img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
 
 /* single.php */
 
@@ -148,6 +161,7 @@ font-size: 20px;
     font-size: 4em;
     margin: 0 30px 10px 0;
     text-align: center;
+    background-color: var(--main-color)
    
     
 }

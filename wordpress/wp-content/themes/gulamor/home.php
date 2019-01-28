@@ -44,19 +44,34 @@
 </div>
 
 <div class="container">
+                <?php 
+				$arg = array(
+					'post_type' => 'about-me',
+					'posts_per_page' => 1,
+					
+
+				);
+
+				$get_arg = new WP_Query( $arg );
+
+				while ( $get_arg->have_posts()) {
+					$get_arg->the_post();
+				
+				?>
     <div class="about-me row">
-        <div class="about-me__img col-md-4">
-            <img src="" alt="">
+        <div class=" col-md-3 col-sm-12">
+       
+       <?php $image = get_field('imagen');
+                   if( !empty($image) ): ?>
+               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"  class="about-me__img"/>
+               <?php endif; ?> 
         </div>
-        <div class="about-me__content col-md-8">
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit, viverra venenatis pulvinar sem vel non lectus tellus, ad lobortis tempor augue quam fusce. Facilisis interdum augue elementum velit luctus tellus, etiam laoreet fames dictumst id tempus a, et iaculis nulla ridiculus ante. Lectus ad eleifend torquent urna habitant ultrices conubia, ridiculus in dui dictumst vel erat.
-
-            Torquent erat libero nunc iaculis mi magnis duis sem id potenti volutpat, luctus parturient ultricies justo pellentesque dictum sollicitudin morbi facilisis vivamus. Vulputate sociosqu egestas nam nisl neque ante mus, aliquet magnis condimentum fermentum parturient aenean convallis cubilia, primis est eros mollis tincidunt eleifend. Lectus lacus aliquet montes suspendisse venenatis potenti, dapibus inceptos sapien mattis eget sodales mauris, nec fames tellus hendrerit sociis.
-            </p>
+        <div class="about-me__content col-md-9 col-sm-12">
+         <h3><?php the_field('titulo'); ?></h3>
+        <p><?php the_field('descripcion'); ?></p>
         </div>
-
-
+        <?php } wp_reset_postdata();
+				?>
     </div>
 
 </div>
