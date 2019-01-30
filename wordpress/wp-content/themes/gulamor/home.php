@@ -2,6 +2,8 @@
 
 
 <div class="container home__contenido">
+
+<h1>Nuestras últimas recetas :)</h1>
     <div class="row">
         <div class="col-md-12">
 

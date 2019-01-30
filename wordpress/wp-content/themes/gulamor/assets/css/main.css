@@ -67,14 +67,13 @@ body {
    margin: auto;
 }
 
-.search {
-    width: 300px;
-    margin-bottom: 20px;
-}
+
 .home__contenido{
     margin-top: 30px;
 }
-
+.home__contenido h1 {
+text-align: center;
+}
 .home-featured {
     position: relative;
     margin-right: 0;
@@ -83,14 +82,19 @@ body {
 .home-featured__title {
     position: absolute;
     bottom: 0;
-    background-color: rgb(0, 212, 318, 0.10);
+    background-color: rgb(0, 212, 318, 0.6);
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
     width: 100%;
+    
+}
+.home-featured__title  h3 {
+    color: white;
+    text-decoration: none;
 }
 .featured__post {
-    width: 300px;
+    width: 285px;
   height: 500px;
   overflow:hidden;
 }
@@ -187,9 +191,17 @@ font-size: 20px;
     margin-top: 5px;
     padding: 10px;
 }
+.articulos__img {
+    width: 450px;
+    height: 250px;
+    overflow: hidden;
+}
 /* Sidebar */
 
-
+.search {
+    width: 300px;
+    margin-bottom: 20px;
+}
 /* Media query */
 @media only screen and (max-width: 600px) {
 
