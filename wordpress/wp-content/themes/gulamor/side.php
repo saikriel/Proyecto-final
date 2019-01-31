@@ -6,21 +6,27 @@
       </span>
     </div>
     <div class="categorias">
-			<?php
+        <ul>
+            
+            <?php
 			$categories = get_categories();
 			foreach($categories as $category) {
 			   echo '<div class="col-md-4 categorias__indiv"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
 		
 			} ?>
+           
+        </ul>
+			
     </div> 
     <br>
     <br>
     <div class="calculadora">
         <form>
-            <p>Convierte gramos a libras (pounds)</p>
+            <h4>Convierte gramos a libras (pounds)</h4>
         <input type="text" id="libra" class="form-control" placeholder="Text input">
         <button type="submit" class="btn btn-primary submit">Enviar</button>
-        <span id="pounds"></span>
+        <br>
+        <span id="pounds" class="calculadora__resultado"></span>
         </form>
 
     </div>

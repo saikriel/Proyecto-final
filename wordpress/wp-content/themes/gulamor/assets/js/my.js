@@ -39,7 +39,7 @@ $(function(){
 	$(".calculadora").on("submit" , function(event){
 		event.preventDefault();
 		var libra = 0.00220462 ;
-		var pesar = parseInt($('#libra').val())
+		var pesar = parseFloat($('#libra').val())
 		$('#pounds').text((libra * pesar))
 	});
 

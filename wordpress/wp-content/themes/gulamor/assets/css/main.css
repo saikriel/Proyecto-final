@@ -38,7 +38,7 @@ body {
 }
 .header__title {
     font-family: 'Tangerine', cursive;
-    color: white;
+    color: var(--main-color);
     text-align: center;
     font-size: 4em;
 }
@@ -215,6 +215,21 @@ font-size: 20px;
 }
 .side__indicadores {
     background-color: rgb(0, 212, 318, 0.6);
+
+}
+.calculadora__resultado {
+    text-align: center;
+    font-size: 2em;
+    background-color: white;
+
+}
+.categorias a {
+    color: black;
+      text-decoration: none;
+      display: block;
+      
+  }
+.calculadora {
     
 }
 /* Categorias */
@@ -223,15 +238,13 @@ font-size: 20px;
 }
 .categorias__indiv {
     
-    border-width: 0.5px;
+    border-width: 0.2px;
     border: solid;
     border-color: var(--main-color);
     padding: 1px;
+    border-radius: 20%;
 }
-.categorias a {
-  color: black;
-    text-decoration: none;
-}
+
 /* Media query */
 @media only screen and (max-width: 600px) {
 

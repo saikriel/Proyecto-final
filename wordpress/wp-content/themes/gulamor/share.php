@@ -1,1 +1,0 @@
-poner una barra lateral pra compartir rrss
