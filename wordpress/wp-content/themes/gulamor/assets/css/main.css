@@ -62,10 +62,7 @@ body {
     display: inline-block;
    
 }
-.recetas__img {
-   display: block;
-   margin: auto;
-}
+
 
 
 .home__contenido{
@@ -136,9 +133,17 @@ font-size: 20px;
     
 }
 .recetas__img {
-    width: 200px;
-    box-shadow: 5px 10px #888888;
+    width: 245px;
+    height: 245px;
+    overflow: hidden;
+    
+  display: block;
 
+}
+.imagenposts {
+    box-shadow: 5px 10px #888888;
+    height: 100%;
+    width: 100%;
 }
 .recetas-blog {
     border-style: solid; 

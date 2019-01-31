@@ -1,11 +1,13 @@
 
 
 					<div class="recetas-blog">
-
-					<?php $image = get_field('imagen');
+							<div class="recetas__img"> 
+							<?php $image = get_field('imagen');
 								if( !empty($image) ): ?>
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300px" class="recetas__img"/>
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300px" class="imagenposts"/>
 							<?php endif; ?> 
+							</div>
+					
 							
 					<a href="<?php the_permalink() ?>"><h3 class="recetas__link"><?php the_title() ?></h3></a>
 					<?php if( get_field('dificultad') == '1' ): ?>
