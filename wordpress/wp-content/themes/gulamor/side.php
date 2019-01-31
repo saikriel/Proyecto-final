@@ -18,12 +18,12 @@
             <p>Convierte gramos a libras (pounds)</p>
         <input type="text" id="libra" class="form-control" placeholder="Text input">
         <button type="submit" class="btn btn-primary submit">Enviar</button>
-        <p id="pounds"></p>
+        <span id="pounds"></span>
         </form>
 
     </div>
     <div>
-        <table class="table table-bordered">
+        <table class="table table-bordered side__indicadores">
                         <h3>Indicadores económicos de hoy</h3>
                         <tr>
                             <td>UF</td>
