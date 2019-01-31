@@ -4,11 +4,9 @@
 
 <div class="footer container">
 	<div class="row">
-		<div class="col-md-4">
-		lorem
-		</div>
-		<div class="col-md-4">
-		lorem
+		<div class="col-md-8">
+		<?php echo do_shortcode( '[contact-form-7 id="63" title="Contact form 1"]' ); ?>
+		
 		</div>
 		<div class="col-md-4 ">
 			<p class="footer__titulos"> ¡Visita nuestras redes sociales! </p>	
