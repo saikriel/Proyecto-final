@@ -40,6 +40,39 @@
 				?>
 			
         </div>
+        <div class="home-featured2">
+        <?php 
+				$arg = array(
+					'post_type' => 'post_recetas',
+					'category_name' => '',
+					'posts_per_page' => 2,
+					
+
+				);
+
+				$get_arg = new WP_Query( $arg );
+
+				while ( $get_arg->have_posts()) {
+					$get_arg->the_post();
+				
+				?>
+
+                    <div class="col-md-3 col-sm-12 featured__post">
+                    <?php $image = get_field('imagen');
+							if( !empty($image) ): ?>
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"  class="home__featured__img"/>
+                        <?php endif; ?> 
+
+                        <div class="home-featured__title">
+
+                            <a href="<?php the_permalink() ?>" ><h3><?php the_title() ?></h3></a>
+                        </div>
+                    </div>
+				
+                <?php } wp_reset_postdata();
+				?>
+			
+        </div>
         
         </div>
     </div>

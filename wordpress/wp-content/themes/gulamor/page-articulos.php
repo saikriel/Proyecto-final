@@ -1,7 +1,7 @@
 <?php  /* Template Name: Articulos */ ?>
 <?php get_header() ?>
-
-<?php 
+<div>
+    <?php 
 				$arg = array(
 					'post_type' => 'post',
 					'category_name' => 'articulo',
@@ -32,4 +32,8 @@
 
 				
                 <?php } wp_reset_postdata();
-				?>
+                ?>
+</div>
+
+
+<?php get_footer() ?>
