@@ -5,7 +5,10 @@
 
 
 	<div class="container">
+		
 		<div class="recetas__main col-md-9">
+			
+
 			<ul>
 				<li class="recetas__li">
 					<?php 
@@ -29,7 +32,8 @@
 					<?php $image = get_field('imagen');
 								if( !empty($image) ): ?>
 							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300px" class="recetas__img"/>
-							<?php endif; ?>
+							<?php endif; ?> 
+							
 					<a href="<?php the_permalink() ?>"><h3 class="recetas__link"><?php the_title() ?></h3></a>
 					<?php if( get_field('dificultad') == '1' ): ?>
 						<p><i class="fas fa-lemon carrot-orange"></i><i class="fas fa-lemon"></i><i class="fas fa-lemon"></i><i class="fas fa-lemon"></i><i class="fas fa-lemon"></i></p>

@@ -51,8 +51,7 @@
 			<?php } ?>
 			<?php } else { ?>
 			<!-- Content -->
-			<?php } wp_reset_postdata();
-				?>
+			<?php } ?>
 		
 		</div>
 
@@ -63,3 +62,5 @@
 </div>
 
 <?php get_footer() ?>
+<?php } wp_reset_postdata();
+				?>
