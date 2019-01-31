@@ -51,6 +51,13 @@ $(function(){
 	  var emailBody = $('#footer__textarea').val();
 	  window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
 	});
+	$(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2';
+		fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));
 
     
 })

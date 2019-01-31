@@ -56,7 +56,7 @@
 			
 			<?php } wp_reset_postdata();
 				?>
-			
+			<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="15"></div>
 		</div>
 		<div class="col-md-4 col-sm-12">
 			<?php get_template_part('side') ?>

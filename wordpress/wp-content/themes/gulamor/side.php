@@ -1,3 +1,4 @@
+<div class="sidebar">
 <div class="buscar">
     <div class="input-group search">
       <input type="text" class="form-control" placeholder="Busca tu receta">
@@ -6,12 +7,13 @@
       </span>
     </div>
     <div class="categorias">
+        <h3>Categorías</h3>
         <ul>
             
             <?php
 			$categories = get_categories();
 			foreach($categories as $category) {
-			   echo '<div class="col-md-4 categorias__indiv"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
+			   echo '<div class="col-md-12 categorias__indiv"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
 		
 			} ?>
            
@@ -21,8 +23,9 @@
     <br>
     <br>
     <div class="calculadora">
+        <br>
         <form>
-            <h4>Convierte gramos a libras (pounds)</h4>
+            <h3>Convierte gramos a libras (pounds)</h3>
         <input type="text" id="libra" class="form-control" placeholder="Text input">
         <button type="submit" class="btn btn-primary submit">Enviar</button>
         <br>
@@ -52,5 +55,5 @@
                     </table>
 
     </div>
-
+    </div>
 </div>
