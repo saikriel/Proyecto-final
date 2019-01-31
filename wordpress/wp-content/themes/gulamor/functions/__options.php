@@ -16,7 +16,7 @@ $theme_options = array(
 	),
 	'slider'				=> array(
 		'flickity'			=> false,
-		'flexslider'		=> true,
+		'flexslider'		=> false,
 	),
 	'jQuery'				=> true,
 	'fontawesome'			=> true,

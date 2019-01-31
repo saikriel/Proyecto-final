@@ -197,7 +197,30 @@ font-size: 20px;
 }
 .contacto__text {
     text-align: center;
+    color: white;
 
+}
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+
+}
+.footer-menu li {
+    display: block;
+    margin: 10px;
+   
+}
+.footer__menu {
+    display: block;
+    margin: auto;
+}
+.fmenu__title {
+    text-align: center;
+    color: white;
+}
+#contacto__submit {
+    margin: auto;
+    display: block;
 }
 /* Posts articulos */
 .articulos__post {
