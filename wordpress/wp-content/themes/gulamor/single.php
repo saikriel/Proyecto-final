@@ -1,16 +1,20 @@
 <?php get_header() ?>
-<div class="recetas container">
-	<div class="row">
-		<div class="receta__content col-md-8 col-sm-12">
+<div class="recetas">
+
+
+<div class="container ">
+	<div class="row recetas__cont">
+		<div class="col-md-8 col-sm-12">
 		<?php if ( have_posts() ) { ?>
 			<?php while ( have_posts() ) { ?>
 				<?php the_post(); ?>
 				
 				<h1><?php the_title() ?></h1>
-				<?php $image = get_field('imagen');
-					if( !empty($image) ): ?>
-				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="700px" />
-				<?php endif; ?>
+				
+					<?php $image = get_field('imagen');
+						if( !empty($image) ): ?>
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="600px" />
+					<?php endif; ?>
 				<br>
 				<time datetime="<?php the_time('Y-m-d') ?>"><?php the_time('d \d\e F \d\e Y') ?></time>
 				<p><?php the_field('tiempo_preparacion'); ?></p>
@@ -49,18 +53,18 @@
 				
 
 			<?php } ?>
-			<?php } else { ?>
-			<!-- Content -->
-			<?php } ?>
-		
+			
+			<?php } wp_reset_postdata();
+				?>
+			
 		</div>
-
-		<div class="sidebar col-md-4">
+		<div class="col-md-4 col-sm-12">
 			<?php get_template_part('side') ?>
 		</div>
+
 	</div>
+
+</div>
 </div>
 
 <?php get_footer() ?>
-<?php } wp_reset_postdata();
-				?>

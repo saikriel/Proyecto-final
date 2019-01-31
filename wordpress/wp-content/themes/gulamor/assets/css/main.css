@@ -110,7 +110,13 @@ text-align: center;
 }
 
 /* single.php */
-
+.recetas{
+    background-image: url(../images/bananas.png);
+    margin-top: -10px;
+} 
+.recetas__cont {
+    margin-top: 10px;
+}
 .fa-lemon {
     font-size: 20px;
     color: lightgray;
@@ -124,6 +130,7 @@ font-size: 20px;
 
 .receta__content {
     margin-top: 20px;
+    margin-right: 20px;
 }
 
 /* pag recetas */
@@ -240,6 +247,8 @@ font-size: 20px;
 .search {
     width: 300px;
     margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(0, 212, 318, 0.6);
 }
 .side__indicadores {
     background-color: rgb(0, 212, 318, 0.6);
@@ -266,11 +275,7 @@ font-size: 20px;
 }
 .categorias__indiv {
     
-    border-width: 0.2px;
-    border: solid;
-    border-color: var(--main-color);
-    padding: 1px;
-    border-radius: 20%;
+    
 }
 
 /* Media query */
