@@ -39,8 +39,17 @@ $(function(){
 	$(".calculadora").on("submit" , function(event){
 		event.preventDefault();
 		var libra = 0.00220462 ;
-		var pesar = parseInt(('#libra').val())
+		var pesar = parseInt($('#libra').val())
 		$('#pounds').text((libra * pesar))
+	});
+
+	$('#contacto__submit').on('click', function (event) {
+		event.preventDefault();
+	  alert("Huh");
+	  var email = 'marianacabezasgt@gmail.com';
+	  var subject = 'gulamor';
+	  var emailBody = $('#footer__textarea').val();
+	  window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
 	});
 
     

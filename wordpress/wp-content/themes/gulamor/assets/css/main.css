@@ -192,7 +192,7 @@ font-size: 20px;
 }
 .contacto__text {
     text-align: center;
-    
+
 }
 /* Posts articulos */
 .articulos__post {
@@ -213,7 +213,10 @@ font-size: 20px;
     width: 300px;
     margin-bottom: 20px;
 }
-
+.side__indicadores {
+    background-color: rgb(0, 212, 318, 0.6);
+    
+}
 /* Categorias */
 .categories {
     background-image: url(../images/bananas.png);
