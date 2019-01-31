@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<div class="categorias">
+<div class="categories">
 
 
 <div class="container">

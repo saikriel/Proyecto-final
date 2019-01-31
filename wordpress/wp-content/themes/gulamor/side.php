@@ -9,10 +9,12 @@
 			<?php
 			$categories = get_categories();
 			foreach($categories as $category) {
-			   echo '<div class="col-md-4"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
+			   echo '<div class="col-md-4 categorias__indiv"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
 		
 			} ?>
     </div> 
+    <br>
+    <br>
     <div class="calculadora">
         <form>
             <p>Convierte gramos a libras (pounds)</p>

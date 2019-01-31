@@ -184,7 +184,16 @@ font-size: 20px;
 .footer__listaredes {
     text-align: center;
 }
-
+.group__textarea {
+    padding-top: 5px;
+}
+.footer__contact {
+    padding-top: 5px;
+}
+.contacto__text {
+    text-align: center;
+    
+}
 /* Posts articulos */
 .articulos__post {
     border-style: dashed  ;
@@ -206,8 +215,19 @@ font-size: 20px;
 }
 
 /* Categorias */
-.categorias {
+.categories {
     background-image: url(../images/bananas.png);
+}
+.categorias__indiv {
+    
+    border-width: 0.5px;
+    border: solid;
+    border-color: var(--main-color);
+    padding: 1px;
+}
+.categorias a {
+  color: black;
+    text-decoration: none;
 }
 /* Media query */
 @media only screen and (max-width: 600px) {
